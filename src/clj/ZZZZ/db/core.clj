@@ -23,8 +23,10 @@
            java.text.SimpleDateFormat))
 
 (defstate ^:dynamic *db*
-  :start {} #_{:datasource (hik/make-datasource (-> env :ZZZZ :db))}
-  :stop identity #_(hik/close-datasource (:datasource *db*)))
+  :start #_{:datasource (hik/make-datasource (-> env :ZZZZ :db))}
+  {} 
+  :stop #_(hik/close-datasource (:datasource *db*))
+  identity)
 
 (defn to-date [^java.sql.Date sql-date]
   (-> sql-date (.getTime) (t/new-duration :millis) (t/instant)))
