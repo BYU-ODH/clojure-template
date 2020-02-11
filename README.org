@@ -1,0 +1,5 @@
+#+TITLE: Centrifuge
+Event extraction single-page app.
+
+* License
+Copyright © 2020 Tory S. Anderson
