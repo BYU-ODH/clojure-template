@@ -1,5 +1,8 @@
-#+TITLE: Centrifuge
-Event extraction single-page app.
+#+TITLE: Quick CLJ Setup
+A fast CLJS setup for BYU ODH applications. 
+
+* TODO Specs
+With this setup, the features/stack are as follows:
 
 * License
 Copyright © 2020 Tory S. Anderson
