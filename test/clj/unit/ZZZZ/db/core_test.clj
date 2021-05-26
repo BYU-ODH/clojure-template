@@ -4,7 +4,6 @@
             [ZZZZ.db.test-util :as tcore]
             [ZZZZ.handler :refer [app]]
             [mount.core]
-            [ZZZZ.db.test-data :as td]
             [clojure.test :refer [deftest is testing]]))
 
 (tcore/basic-transaction-fixtures
